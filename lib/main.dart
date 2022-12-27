@@ -4,7 +4,8 @@ import 'package:provider/provider.dart';
 import 'package:gen_teste_flutter/layers/data/repositories/characters_repository.dart';
 import 'package:gen_teste_flutter/layers/data/data_sources/characters_data_source.dart';
 
-import 'package:gen_teste_flutter/layers/presenter/pages/home_page.dart';
+import 'package:gen_teste_flutter/layers/presenter/pages/home_page/home_page.dart';
+import 'package:gen_teste_flutter/layers/presenter/pages/character_page/character_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,10 +26,16 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ],
-      child: const MaterialApp(
+      child: MaterialApp(
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
-        home: HomePage(),
+        theme: ThemeData(  
+        ),
+        initialRoute: '/',
+        routes: {
+          '/': (context) => HomePage(),
+          '/character-page': (context) => CharacterPage(),
+        },
       ),
     );
   }

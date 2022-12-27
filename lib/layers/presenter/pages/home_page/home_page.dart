@@ -4,6 +4,7 @@ import 'package:gen_teste_flutter/layers/presenter/pages/home_page/bloc/home_blo
 import 'package:gen_teste_flutter/layers/presenter/pages/home_page/bloc/home_events.dart';
 import 'package:gen_teste_flutter/layers/presenter/pages/home_page/bloc/home_states.dart';
 import 'package:gen_teste_flutter/layers/presenter/widgets/character_card.dart';
+import 'package:gen_teste_flutter/layers/presenter/widgets/loading_characters_list.dart';
     
 class HomePage extends StatefulWidget {
 
@@ -60,7 +61,7 @@ class _HomePageState extends State<HomePage> {
                   Padding(
                     padding: const EdgeInsets.all(20),
                     child: Text(
-                      'MARVEL\nCINAMETIC\nUNIVERSE',
+                      'MARVEL\nCINAMATIC\nUNIVERSE',
                       style: TextStyle(  
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
@@ -88,6 +89,7 @@ class _HomePageState extends State<HomePage> {
                       if(state is Loading) {
                         return SizedBox(
                           height: MediaQuery.of(context).size.height / 2.8,
+                          child: LoadingCharactersList(),
                         );
                       } else if(state is Error) {
                         return SizedBox(
@@ -105,9 +107,7 @@ class _HomePageState extends State<HomePage> {
                             itemBuilder: (context, index) {
                               return CharacterCard(
                                 position: index + 1,
-                                posterPath: state.characters[index].posterPath,
-                                originalTitle: state.characters[index].originalTitle,
-                                releaseDate: state.characters[index].releaseDate,
+                                character: state.characters[index],
                               );
                             },
                           ),
