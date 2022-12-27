@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'gen_teste_flutter',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(  
         ),
