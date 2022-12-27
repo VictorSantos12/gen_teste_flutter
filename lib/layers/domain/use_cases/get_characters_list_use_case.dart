@@ -1,18 +1,18 @@
-import 'package:gen_teste_flutter/core/use_case.dart';
+import 'package:gen_teste_flutter/core/use_case_interface.dart';
 import 'package:gen_teste_flutter/layers/domain/entities/character_entity.dart';
 
-import '../repositories/characters_repository.dart';
+import '../repositories/characters_repository_interface.dart';
 
-class GetCharactersList implements AUseCase<CharacterEntity> {
+class GetCharactersList implements UseCaseInterface<CharacterEntity> {
   
-  final ACharactersRepository repository;
+  final CharactersRepositoryInterface repository;
   
   GetCharactersList({
     required this.repository,
   });
   
   @override
-  Future<Map<dynamic, CharacterEntity>> call() async {
+  Future<List<CharacterEntity>> call() async {
     return await repository.getCharactersList();
   }
   
