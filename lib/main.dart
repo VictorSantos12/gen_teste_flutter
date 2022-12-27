@@ -21,14 +21,14 @@ class MyApp extends StatelessWidget {
         ),
         Provider<CharactersRepository>(
           create: (_) => CharactersRepository(
-            charactersDataSourceInterface: CharactersDataSource()
+            charactersDataSourceInterface: CharactersDataSource(),
           ),
         ),
       ],
       child: const MaterialApp(
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
-        home: HomePage()
+        home: HomePage(),
       ),
     );
   }

@@ -35,7 +35,7 @@ class CharacterModel extends CharacterEntity {
     voteCount: json['vote_count'],
   );
 
-  Map<String, dynamic> tioJson() => {
+  Map<String, dynamic> tioMap() => {
     'adult': adult,
     'backdrop_path': backdropPath,
     'genre_ids': genreIds,
