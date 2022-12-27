@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
+import 'package:provider/provider.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gen_teste_flutter/layers/data/models/character_model.dart';
 import 'package:gen_teste_flutter/layers/data/repositories/characters_repository.dart';
 import 'package:gen_teste_flutter/layers/presenter/pages/home_page/bloc/home_states.dart';
-import 'package:provider/provider.dart';
 
 import 'home_events.dart';
 
@@ -13,7 +14,7 @@ class HomeBloc extends Bloc<HomeEvents, HomeStates> {
 
   HomeBloc({required this.context}) : super(Initial()) {
 
-   final CharactersRepository charactersRepository = Provider.of<CharactersRepository>(context);
+   final charactersRepository = Provider.of<CharactersRepository>(context);
 
     on<GetCharactersEvent>((event, emit) async {
       emit(Loading());

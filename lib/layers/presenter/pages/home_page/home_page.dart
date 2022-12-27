@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:gen_teste_flutter/layers/presenter/pages/home_page/bloc/home_bloc.dart';
 import 'package:gen_teste_flutter/layers/presenter/pages/home_page/bloc/home_events.dart';
 import 'package:gen_teste_flutter/layers/presenter/pages/home_page/bloc/home_states.dart';
+
 import 'package:gen_teste_flutter/layers/presenter/widgets/character_card.dart';
 import 'package:gen_teste_flutter/layers/presenter/widgets/loading_characters_list.dart';
     
@@ -14,16 +16,9 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-
 class _HomePageState extends State<HomePage> {
   
   late HomeBloc homeBloc;
-
-  @override
-  void initState() {
-    super.initState();
- 
-  }
 
   @override
   Widget build(BuildContext context) {

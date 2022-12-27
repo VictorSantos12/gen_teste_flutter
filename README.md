@@ -1,16 +1,12 @@
 # gen_teste_flutter
 
-A new Flutter project.
+Segundo a indicação do pdf que me foi disponibilizado, estudei e apliquei os conceitos da ```Clean Archtecture``` e do ```SOLID``` no desenvolvimento deste projeto:
 
-## Getting Started
+## Arquitetura Limpa (layers)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+<img align="right" style="width: 400px;" src="https://user-images.githubusercontent.com/61476935/179646952-ac018b2e-97d3-417c-b36b-505bb55f49e4.png">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Conclusão
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Neste teste compeendi a real necessidade de manter uma arquitetura coesa, visto que os resultados me permitiram aplicar o conhecimento que eu já detinha com muito mais facilidade, e com certeza me motivaram a ser um desenvolvedor melhor.
