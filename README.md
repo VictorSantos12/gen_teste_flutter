@@ -5,7 +5,7 @@ Segundo a indicação do pdf que me foi disponibilizado, estudei e apliquei os c
 ## Arquitetura Limpa (layers)
 
 
-<img align="right" style="width: 400px;" src="https://user-images.githubusercontent.com/61476935/179646952-ac018b2e-97d3-417c-b36b-505bb55f49e4.png">
+<img align="right" style="width: 400px;" src="https://user-images.githubusercontent.com/61476935/209715747-f700013a-7cca-4972-aa5c-73b1a0b13a19.pngg">
 
 ## Conclusão
 
