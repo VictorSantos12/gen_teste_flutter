@@ -48,7 +48,7 @@ class CharacterPage extends StatelessWidget {
                decoration: BoxDecoration(
                  color: Colors.black,
                  image: DecorationImage(  
-                   image: NetworkImage(args['poster_path']),
+                   image: NetworkImage('https://image.tmdb.org/t/p/original/${args['poster_path']}'),
                    fit: BoxFit.cover,
                  ),
                  borderRadius: BorderRadius.all(

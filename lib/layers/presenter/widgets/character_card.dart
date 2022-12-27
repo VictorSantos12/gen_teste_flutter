@@ -36,7 +36,7 @@ class _CharacterCardState extends State<CharacterCard> {
             margin: const EdgeInsets.only(right: 20),
             decoration: BoxDecoration(
               image: DecorationImage(  
-                image: NetworkImage(widget.character.posterPath),
+                image: NetworkImage('https://image.tmdb.org/t/p/original/${widget.character.posterPath}'),
                 fit: BoxFit.cover
               ),
               borderRadius: BorderRadius.all(
